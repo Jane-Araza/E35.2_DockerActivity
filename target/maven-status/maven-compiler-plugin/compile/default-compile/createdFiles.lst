@@ -1,0 +1,5 @@
+com\example\Task\entity\Task.class
+com\example\Task\service\TaskService.class
+com\example\Task\repository\TaskRepository.class
+com\example\Task\TaskApplication.class
+com\example\Task\controller\TaskController.class

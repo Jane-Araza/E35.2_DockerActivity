@@ -25,9 +25,10 @@ public class TaskController {
         return "addtaskform";
     }
     @PostMapping ("/addtask")
-    public String addTask(@ModelAttribute("task") Task task)
+    public String addTask(@ModelAttribute("task") Task task, Model model)
     {
         taskService.addTask(task);
+        model.addAttribute("task", taskService.getAllTask());
         return "index";
     }
     @GetMapping("/delete/{id}")
